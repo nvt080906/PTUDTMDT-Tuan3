@@ -1,0 +1,145 @@
+
+/* 1. Dinh dang chung */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Times New Roman", serif;
+    color: #171717;
+    background-color: white;
+}
+
+/* 2. Khung chua lon - Tieu chi i */
+#root {
+    width: 960px;
+    max-width: 100%;
+    min-height: 800px;
+    margin: 40px auto;
+    padding: 32px 55px 110px;
+    font-size: 16px;
+    background-color: #cccccc;
+}
+
+/* 3. Tieu de - Tieu chi ii */
+.header {
+    font-size: 30px;
+    text-align: center;
+    margin: 0 0 22px;
+}
+
+/* 4. Mo ta gioi thieu - Tieu chi iii */
+#root > .description {
+    margin: 0;
+    padding: 20px 52px;
+    background-color: #858585;
+    border: 3px solid white;
+    border-radius: 15px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* 5. Khu vuc danh sach */
+.container {
+    margin-top: 48px;
+}
+
+.remark {
+    text-align: center;
+    font-size: 14px;
+    margin: 0 0 35px;
+}
+
+.heroes-list {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+/* 6. Tung hero-item - Tieu chi iv */
+.hero-item {
+    position: relative;
+    width: calc((100% - 36px) / 4);
+    display: inline-block;
+    height: 400px;
+    vertical-align: top;
+}
+
+/* 7. Tieu de hero-item - Tieu chi v */
+.hero-item h2 {
+    font-size: 18px;
+    text-align: center;
+    white-space: nowrap;
+    margin: 0;
+}
+
+/* 8. Mo ta hero-item - Tieu chi vi */
+.hero-item > .description {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 2;
+
+    width: 100%;
+    height: 230px;
+    margin: 0;
+    padding: 12px;
+
+    background-color: rgba(103, 103, 103, 0.79);
+    border: 2px solid white;
+    border-radius: 4px;
+
+    color: #111111;
+    font-size: 14px;
+    line-height: 1.28;
+    text-align: justify;
+}
+
+/* 9. Hinh anh hero-item - Tieu chi vii */
+.hero-item img {
+    position: absolute;
+    top: 190px;
+    left: -40px;
+    z-index: 1;
+
+    width: 200px;
+    height: 200px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 18px;
+    object-fit: cover;
+}
+
+/* 10. Dieu chinh man hinh nho */
+@media (max-width: 750px) {
+    #root {
+        padding: 25px 24px 70px;
+    }
+
+    .heroes-list {
+        flex-wrap: wrap;
+        row-gap: 15px;
+    }
+
+    .hero-item {
+        width: calc((100% - 12px) / 2);
+        height: 400px;
+    }
+
+    .hero-item img {
+        left: -15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-item {
+        width: 100%;
+    }
+
+    .hero-item img {
+        left: 0;
+    }
+}

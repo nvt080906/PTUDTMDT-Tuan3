@@ -1,0 +1,22 @@
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.menu li {
+    display: inline-block;
+    width: 140px;
+    margin-right: 5px;
+    background-color: cyan;
+    text-align: center;
+}
+
+.menu a {
+    display: block;
+    padding: 5px 0;
+    color: blue;
+    font-size: 26px;
+    text-decoration: underline;
+}

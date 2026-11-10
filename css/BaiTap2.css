@@ -1,0 +1,70 @@
+
+.ueh {
+    color: blue;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+.cnttd {
+    color: rgba(255, 0, 0, 0.5);
+    text-align: right;
+    font-style: italic;
+    border: 2px dotted yellow;
+    border-radius: 10px;
+    background-color: lightgray;
+    font-size: 15px;
+    padding: 12px;
+}
+
+#demotext {
+color: #A7DD3C;
+background: #FFFFFF;
+text-shadow: 2px 0 0px #800040, 3px 2px 0px rgba(77,0,38,0.5), 3px 0 3px #FF002B, 5px 0 3px #800015, 6px 2px 3px rgba(77,0,13,0.5), 6px 0 9px #FF5500, 8px 0 9px #802A00, 9px 2px 9px rgba(77,25,0,0.5), 9px 0 18px #FFD500, 11px 0 18px #806A00, 12px 2px 18px rgba(77,66,0,0.5), 12px 0 30px #D4FF00, 14px 0 30px #6A8000, 15px 2px 30px rgba(64,77,0,0.5), 15px 0 45px #80FF00, 17px 0 45px #408000, 17px 2px 45px rgba(38,77,0,0.5);
+color: #A7DD3C;
+background: #FFFFFF;
+}
+
+
+.bit-background {
+    height: 300px;
+    border: 1px solid #cccccc;
+
+    background-image: url("../images/BIT_logo.png");
+    background-size: 30px auto;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+
+/* Cau 2e - Xu ly van ban bi tran */
+
+/* Dinh dang chung */
+.overflow-demo {
+    width: 100px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 0;
+}
+
+/* i. An noi dung bi tran */
+.overflow-hidden {
+    overflow: hidden;
+}
+
+/* ii. Hien thi dau ba cham */
+.overflow-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* iii. Khong tu dong xuong dong */
+.overflow-nowrap {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
